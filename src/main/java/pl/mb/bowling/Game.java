@@ -2,11 +2,17 @@ package pl.mb.bowling;
 
 public class Game {
 
-    public void roll(int knockedPins) {
+    private int score;
 
+    public Game() {
+        score = 0;
+    }
+
+    public void roll(int knockedPins) {
+        score += knockedPins;
     }
 
     public int score() {
-        return 0;
+        return score;
     }
 }
